@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package net.qlin.bootup.domain;
+package net.qlin.bootup.demo.domain;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package net.qlin.bootup.controller;
+package net.qlin.bootup.account.controller;
 
 /**
  * Created by qiulin on 2016/1/11.
@@ -11,5 +11,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @Controller
-public class IndexController {
+public class LoginController {
 }

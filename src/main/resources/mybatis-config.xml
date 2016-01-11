@@ -4,9 +4,9 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <package name="net.qlin.bootup.domain"/>
+        <package name="net.qlin.bootup.demo.domain"/>
     </typeAliases>
     <mappers>
-        <mapper resource="mapper/CityMapper.xml"/>
+        <mapper resource="mapper/demo/CityMapper.xml"/>
     </mappers>
 </configuration>

@@ -23,7 +23,9 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
-	mavenCentral()
+    mavenLocal()
+    mavenCentral()
+    jcenter()
 }
 
 ext {
@@ -47,11 +49,12 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-velocity')
 	compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-cache')
+    compile('org.mybatis.spring.boot:mybatis-spring-boot-starter:1.0.0')
 
 	// 3rd party
     compile("net.sf.ehcache:ehcache:${ehcacheVersion}")
     compile("redis.clients:jedis:${jedisVersion}")
-	compile("org.apache.shro:shiro-core:${shiroVersion}")
+	compile("org.apache.shiro:shiro-core:${shiroVersion}")
 	compile("org.apache.shiro:shiro-spring:${shiroVersion}")
 	compile("org.apache.shiro:shiro-web:${shiroVersion}")
 	compile("org.apache.shiro:shiro-ehcache:${shiroVersion}") {

@@ -14,13 +14,13 @@
  *    limitations under the License.
  */
 
-package net.qlin.bootup.mapper;
+package net.qlin.bootup.demo.mapper;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import sample.mybatis.domain.City;
+import net.qlin.bootup.demo.domain.City;
 
 @Component
 public class CityMapper {
