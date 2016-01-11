@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BootUpApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BootUpApplication.class, args);
+		SpringApplication.run(BootupApplication.class, args);
 	}
 
 	@Override
