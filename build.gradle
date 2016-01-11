@@ -46,6 +46,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-validation')
 	compile('org.springframework.boot:spring-boot-starter-velocity')
 	compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-starter-cache')
 
 	// 3rd party
     compile("net.sf.ehcache:ehcache:${ehcacheVersion}")
