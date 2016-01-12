@@ -37,6 +37,10 @@ ext {
     jedisVersion = "2.8.0"
     shiroVersion = "1.2.4"
     druidVersion = "1.0.16"
+
+    commonsIoVersion = "2.4"
+    commonsLangVersion = "3.4"
+    commonsCodecVersion = "1.9"
 }
 
 
@@ -49,9 +53,14 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-velocity')
 	compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-cache')
-    compile('org.mybatis.spring.boot:mybatis-spring-boot-starter:1.0.0')
+    compile("org.springframework.boot:spring-boot-starter-log4j2")
+
+    // commons
+    compile("org.apache.commons:commons-lang3:${commonsLangVersion}")
+    compile("commons-codec:commons-codec:${commonsCodecVersion}")
 
 	// 3rd party
+    compile("com.alibaba:druid:${druidVersion}")
     compile("net.sf.ehcache:ehcache:${ehcacheVersion}")
     compile("redis.clients:jedis:${jedisVersion}")
 	compile("org.apache.shiro:shiro-core:${shiroVersion}")
@@ -60,6 +69,15 @@ dependencies {
 	compile("org.apache.shiro:shiro-ehcache:${shiroVersion}") {
 		exclude group: 'net.sf.ehcache', module: 'ehcache-core'
 	}
+
+    compile("org.mybatis:mybatis:${mybatisVersion}")
+    compile("org.mybatis:mybatis-spring:${mybatisSpringVersion}")
+    compile('org.mybatis.spring.boot:mybatis-spring-boot-starter:1.0.0')
+
+    // javax
+    compile("javax.servlet:jstl:${javaxJstlApiVersion}")
+    providedCompile("javax.servlet:javax.servlet-api:${javaxServletApiVersion}")
+    providedCompile("javax.servlet.jsp:javax.servlet.jsp-api:${javaxJspApiVersion}")
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
